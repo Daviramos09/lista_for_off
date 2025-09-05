@@ -9,7 +9,15 @@
     let listaDeNomes = ["João Pedro", "Gabriel José", "Ulisses Joao", "Pedro Henrique", "João da Silva", "João Henrique", "Alisson João"];
 
     //PROCESSAMENTO
-    
+    let joao = [];
+    for (let nome of listaDeNomes) {
+        nome = nome.replace("ã", "a");
+        if (nome.toUpperCase().includes("JOAO") == true) {
+            joao.push(nome);
+        }
+    }
     //SAÍDA
+    document.write(`a lista que contém o nome joão é ${joao} <P>`);
+    document.write(`a lista que completa é ${listaDeNomes} <P>`);
 
 </script>
